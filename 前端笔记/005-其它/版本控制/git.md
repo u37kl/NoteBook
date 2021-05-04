@@ -720,21 +720,19 @@
 >
 >   
 >
->  
+>  ![image-20210105181852021](media/git/image-20210105181852021.png)
 >
-> ![image-20210105181852021](media/git/image-20210105181852021.png)
+> 
 >
->  
+>  ![image-20210105183528826](media/git/image-20210105183528826.png)
 >
-> ![image-20210105183528826](media/git/image-20210105183528826.png)
->
->  
->
->   
->
-> ![image-20210105232410094](media/git/image-20210105232410094.png)
+> 
 >
 >  
+>
+>   ![image-20210105232410094](media/git/image-20210105232410094.png)
+>
+> 
 >
 >  下面推送到远程代码仓库错误，因为用户名密码错误，因为你第一次推送时需要输入远程仓库的用户名密码，如果不需要输入则一定使用了默认的用户名密码，如果推送到另一个一台服务器上，此时就会报错。例如两个GitHub账号，使用主号操作，有一天使用小号时推送代码时，就会出错。
 >
@@ -744,11 +742,19 @@
 >
 >  上传时，远程库不存在master分支。检查一下远程库是否存在master这个分支吗。
 >
-> ![image-20210106214409524](media/git/image-20210106214409524.png)
+>  ![image-20210106214409524](media/git/image-20210106214409524.png)
 >
->  
+> 
 >
-> ![image-20210107011406583](media/git/image-20210107011406583.png)
+>  ![image-20210107011406583](media/git/image-20210107011406583.png)
 
-
-
+> ![image-20210504172113578](media/git/image-20210504172113578.png)
+>
+> 有时当推送到github时，推送不上去出现ssl_connect问题，这是代理出现问题，需要清除代理
+>
+> ```
+> // 清除http代理
+> git config --global --unset https.https://github.com.proxy
+> // 清除https代理
+> git config --global --unset http.https://github.com.proxy
+> ```
